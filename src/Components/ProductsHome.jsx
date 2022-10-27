@@ -12,6 +12,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import image4 from '../Images/4.jpg'
 // import { styled, createTheme, ThemeProvider } from '@mui/system';
 import { makeStyles } from '@mui/styles';
+import { useState } from "react";
 
 
 
@@ -26,49 +27,47 @@ const useStyles = makeStyles((theme)=>({
  
 }));
 
+
 export default function ProductsHome() {
+
+
+  
+const [shadow,setShadow] = useState('1');
+
+const onMouseOver = () => setShadow('3');
+const onMouseOut = () => setShadow('3');
 
   const classes = useStyles();
     return(
 
-     
-      <Accordion style={{height:'50%',position:"relative",
-      // backgroundImage:`url("../Images/1.jpg)`
-      backgroundImage: `url(${image4})`
-      
-      }}
-      defaultExpanded>
-        
-        <AccordionSummary 
-        // classes={{ content: classes.customAccordianSummary.content }}
-          expandIcon={<ExpandMoreIcon/>}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-          IconButtonProps={{ className: classes.iconBtn }}
-          
-        >
-          <Grid container>
-            <Grid item xs={12}>
-            <Typography style={{fontFamily:'montserrat',color:'white',textShadow:"0 0 5px black, 0 0 5px black"}}><h2><b>PRODUCTS  LIST</b></h2></Typography>
+    
+        <>
+        <Grid container >
+          {/* <Grid container style={{height:'200px'}}> */}
+            <Grid item xs={12} style={{marginTop:'2%',marginBottom:'2%'}} >
+            <Typography style={{fontFamily:'arial black',color:'black',
+            // backgroundColor:'white',padding:'1% 1% 1% 1%',border:"3px solid grey",display:'inline-block'
+            // textShadow:"0 0 5px black, 0 0 5px black"
+
+            }}
+            ><h2><b>OUR PRODUCTS</b></h2></Typography>
             </Grid>
 
-            {/* <Grid item xs={12}>
-            <Button color="primary" variant="contained">View More ...</Button>
-            </Grid> */}
-          </Grid>
+           
+          {/* </Grid> */}
         
          
-        </AccordionSummary>
-
-        <AccordionDetails >
-        <Grid container >
-            <Paper style={{height:'80%px',width:'100%',backgroundColor:'#CCED00'}}>
-                <Grid container spacing={1.4} style={{marginLeft:'2%',marginBottom:'2%', marginTop:'2%'}}>
+      
+        <Grid container style={{marginTop:'0',}} >
+            <Paper style={{height:'80%px',width:'100%',backgroundColor:'#CCED00'
+            // backgroundColor:'#CCED00'
+            }}>
+                <Grid container spacing={1.4} style={{marginLeft:'2%',marginBottom:'5%', marginTop:'2%'}}>
                     {/* <Grid item xs={12} style={{marginTop:'1%', marginBottom:'1%'}}>
                         <Typography><h4><b> PRODUCTS LIST </b></h4> </Typography>
                         </Grid> */}
                     <Grid item xs={12} lg={3}>
-            <Card sx={{ maxWidth: 500}} style={{width:'250px'}}>
+            <Card sx={{ maxWidth: 500}} style={{width:'250px'}} zDepth={shadow} onMouseEnter={onMouseOver}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -94,7 +93,7 @@ export default function ProductsHome() {
     </Grid>
 
     <Grid item xs={12} lg={3}>
-    <Card sx={{ maxWidth: 500}} style={{width:'250px'}}>
+    <Card sx={{ maxWidth: 500}} style={{width:'250px'} }>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -173,8 +172,10 @@ export default function ProductsHome() {
             </Paper>
 
         </Grid>
-        </AccordionDetails>
-      </Accordion>
+        </Grid>
+        </>
+        
+   
 
 
 

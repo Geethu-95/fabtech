@@ -14,7 +14,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { Link } from '@mui/material';
-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const StyledFab = styled(Fab)({
   position: 'absolute',
@@ -63,8 +63,9 @@ export default function BottomAppBar() {
                 <Grid item xs={12} lg={4}>
                   <Typography>
                     <IconButton style={{color:"white"}}><FacebookIcon/></IconButton>
-                    <IconButton style={{color:"white"}}><InstagramIcon/></IconButton>
-                    <IconButton style={{color:"white"}}><TwitterIcon/></IconButton>
+                    {/* <IconButton style={{color:"white"}}><InstagramIcon/></IconButton> */}
+                    {/* <IconButton style={{color:"white"}}><TwitterIcon/></IconButton> */}
+                    <IconButton style={{color:'white'}}><WhatsAppIcon/></IconButton>
                   </Typography>
                 </Grid>
                 <Grid item xs={12} lg={4}>

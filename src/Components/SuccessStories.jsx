@@ -32,8 +32,12 @@ export default class SuccessStories extends Component {
       
       <Grid container style={{marginTop:"0px",position:"relative"}}>
         <Paper style={{width:'100%', backgroundColor:'#ADD8E6'}}>
-          <Typography style={{marginTop:'1%', marginBottom:'1%',fontFamily:'montserrat'}}><h2><b>SUCCESS STORIES</b></h2></Typography>
-        <Carousel breakPoints={breakPoints}>
+          <Typography style={{color:'black' 
+          ,marginTop:'3%', marginBottom:'3%',fontFamily:'arial black'
+          ,
+          // display:'inline-block',padding:'1% 1% 1% 1%',border:"3px solid white"
+        }}><h2><b>HAPPY CLIENT STORIES</b></h2></Typography>
+        <Carousel breakPoints={breakPoints} style={{marginBottom:'2%'}}>
         {items.map(item => <div key={item.id}>{item.comp}</div>)}
       </Carousel>
         </Paper>

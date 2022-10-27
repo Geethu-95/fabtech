@@ -1,13 +1,20 @@
 import { Grid, Typography } from "@mui/material";
+import contactImg from '../../Images/contact1.jpg'
 
 export default function Contact() {
 
     return(
 
         <>
-            <Grid container alignItems={'center'}>
-                
-                <Grid item xs={12}>
+            <Grid container alignItems={'center'} style= {{marginTop:'3%',marginBottom:'3%'}}>
+
+                <Grid item xs={12} lg={6} style= {{marginTop:'3%',marginBottom:'3%'}}>
+
+                    <img src={contactImg} height="300px" width="500px" alt="Contact Us"></img>
+                </Grid>
+
+                <Grid item xs={12} lg={6}>
+                <Grid item xs={12} >
                     <Typography>
                         <b>Work & Office Address</b>
                     </Typography>
@@ -21,7 +28,7 @@ export default function Contact() {
 
                 <br/><br/>
 
-                <Grid item xs={12}>
+                <Grid item xs={12} >
                     <Typography>
                         <b>Mobile:</b>
                     </Typography>
@@ -37,7 +44,7 @@ export default function Contact() {
 
                 <br/><br/>
 
-                <Grid item xs={12}>
+                <Grid item xs={12} >
                     <Typography>
                         <b>Email:</b>
                     </Typography>
@@ -45,6 +52,7 @@ export default function Contact() {
                     <Typography>
                         fabrotechnics@gmail.com
                     </Typography>
+                    </Grid>
                 </Grid>
             </Grid>
         </>
