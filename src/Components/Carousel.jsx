@@ -37,7 +37,7 @@ export default function Carousel () {
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src={homePic} class="d-block w-100" alt="..."/>
+      <img src={image1} class="d-block w-100" alt="..."/>
       <div class="carousel-caption d-block">
         {/* <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p> */}
