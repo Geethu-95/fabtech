@@ -12,7 +12,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import image4 from '../Images/4.jpg'
 // import { styled, createTheme, ThemeProvider } from '@mui/system';
 import { makeStyles } from '@mui/styles';
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -37,11 +38,25 @@ const [shadow,setShadow] = useState('1');
 const onMouseOver = () => setShadow('3');
 const onMouseOut = () => setShadow('3');
 
+const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > 769) {
+      setIsDesktop(true);
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+      setIsDesktop(false);
+    }
+  }, []);
+
   const classes = useStyles();
     return(
 
     
         <>
+         <Fade left={isDesktop} bottom={isMobile} duration={500} delay={200} distance="30px">
         <Grid container >
           {/* <Grid container style={{height:'200px'}}> */}
             <Grid item xs={12} style={{paddingTop:'2%',paddingBottom:'2%',backgroundColor:'maroon'}} >
@@ -178,6 +193,7 @@ const onMouseOut = () => setShadow('3');
 
         </Grid>
         </Grid>
+        </Fade>
         </>
         
    

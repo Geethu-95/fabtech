@@ -2,6 +2,7 @@ import { Grid, Paper, Typography } from '@mui/material';
 import React, { Component } from 'react';
 import Carousel from 'react-elastic-carousel';
 import MultiActionAreaCard from './SuccessStoriesCard'
+import Fade from 'react-reveal/Fade';
 
 
 export default class SuccessStories extends Component {
@@ -23,14 +24,32 @@ export default class SuccessStories extends Component {
      { width: 768, itemsToShow: 3 },
      { width: 1200, itemsToShow: 4 }
   ],
+  isDesktop:"false",
+  isMobile:"false",
   }
+
+  // componentDidMount() {
+
+  //   if (window.innerWidth > 769) {
+  //     this.isDesktop(true);
+  //     this.isMobile(false);
+  //   } else {
+  //     this.isMobile(true);
+  //     this.isDesktop(false);
+  //   }
+  // }
 
   render () {
     const { items } = this.state;
     const {breakPoints} = this.state;
+
+    
     return (
       
+      // <Fade right={this.isDesktop} top={this.isMobile} duration={500} delay={200} distance="30px">
+      <Fade right duration={500} delay={200} distance="30px">
       <Grid container style={{marginTop:"0px",position:"relative"}}>
+         
         <Paper style={{width:'100%', backgroundColor:'#ADD8E6'}}>
           <Typography style={{color:'black' 
           ,marginTop:'3%', marginBottom:'3%',fontFamily:'arial black',border:'2px solid black' , borderRadius:'8px',display:'inline-block',padding:'4px 4px 4px 4px'
@@ -41,9 +60,9 @@ export default class SuccessStories extends Component {
         {items.map(item => <div key={item.id}>{item.comp}</div>)}
       </Carousel>
         </Paper>
-        
+       
       </Grid>
-
+      </Fade>
      
     )
   }
