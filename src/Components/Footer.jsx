@@ -33,22 +33,22 @@ export default function BottomAppBar() {
         <Toolbar>
             <Grid container style={{marginTop:'20px'}}>
                 <Grid item xs={12} lg={4}>
-                    <Typography >FABRO TECHNICS</Typography><br/>
+                    <Typography align="left">FABRO TECHNICS</Typography><br/>
                     
                 </Grid>
 
                 <Grid item xs={12} lg = {4}>
-                  <Typography>PRODUCTS</Typography>
+                  <Typography align="">PRODUCTS</Typography>
                   
                   
                   
                 </Grid>
 
-                <Grid item xs={12} lg={4}>
+                <Grid item xs={12} lg={4} align="center">
                   <Typography>Connect with us</Typography>
                 </Grid>
 
-                <Grid item xs={12} lg={4}>
+                <Grid item xs={12} lg={4} align="left">
                 <Typography >#111, Fabro Technics,</Typography>
                     <Typography>Old School Road, J.C Road,</Typography>
                     <Typography>Bangalore, KA, IN - 560067</Typography>
@@ -60,7 +60,7 @@ export default function BottomAppBar() {
                 <Typography> <Link>Lorem ipsum</Link></Typography>
                   {/* <Typography>Lorem ipsum</Typography> */}
                 </Grid>
-                <Grid item xs={12} lg={4}>
+                <Grid item xs={12} lg={4} align="center">
                   <Typography>
                     <IconButton style={{color:"white"}}><FacebookIcon/></IconButton>
                     {/* <IconButton style={{color:"white"}}><InstagramIcon/></IconButton> */}

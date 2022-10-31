@@ -33,7 +33,7 @@ export default class SuccessStories extends Component {
       <Grid container style={{marginTop:"0px",position:"relative"}}>
         <Paper style={{width:'100%', backgroundColor:'#ADD8E6'}}>
           <Typography style={{color:'black' 
-          ,marginTop:'3%', marginBottom:'3%',fontFamily:'arial black'
+          ,marginTop:'3%', marginBottom:'3%',fontFamily:'arial black',border:'2px solid black' , borderRadius:'8px',display:'inline-block',padding:'4px 4px 4px 4px'
           ,
           // display:'inline-block',padding:'1% 1% 1% 1%',border:"3px solid white"
         }}><h2><b>HAPPY CLIENT STORIES</b></h2></Typography>

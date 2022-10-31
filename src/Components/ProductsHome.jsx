@@ -44,14 +44,19 @@ const onMouseOut = () => setShadow('3');
         <>
         <Grid container >
           {/* <Grid container style={{height:'200px'}}> */}
-            <Grid item xs={12} style={{marginTop:'2%',marginBottom:'2%'}} >
-            <Typography style={{fontFamily:'arial black',color:'black',
+            <Grid item xs={12} style={{paddingTop:'2%',paddingBottom:'2%',backgroundColor:'maroon'}} >
+            <Typography style={{fontFamily:'arial black',color:'white',border:'2px solid white' , borderRadius:'8px',display:'inline-block',padding:'4px 4px 4px 4px'
             // backgroundColor:'white',padding:'1% 1% 1% 1%',border:"3px solid grey",display:'inline-block'
             // textShadow:"0 0 5px black, 0 0 5px black"
 
             }}
             ><h2><b>OUR PRODUCTS</b></h2></Typography>
             </Grid>
+            {/* <Grid item xs={12} style={{backgroundColor:'maroon'}}>
+              <Typography variant="h8" style={{fontFamily:'arial black',color:'white',}}>
+                Choose from out list of products to view & quote
+              </Typography>
+            </Grid> */}
 
            
           {/* </Grid> */}
@@ -59,7 +64,7 @@ const onMouseOut = () => setShadow('3');
          
       
         <Grid container style={{marginTop:'0',}} >
-            <Paper style={{height:'80%px',width:'100%',backgroundColor:'#CCED00'
+            <Paper style={{height:'100%',width:'100%',backgroundColor:'#CCED00'
             // backgroundColor:'#CCED00'
             }}>
                 <Grid container spacing={1.4} style={{marginLeft:'2%',marginBottom:'5%', marginTop:'2%'}}>

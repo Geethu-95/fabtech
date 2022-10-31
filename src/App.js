@@ -11,6 +11,7 @@ import AboutUs from './Components/Pages/AboutUs'
 import HomePage from './Components/HomePage'
 import Products from './Components/Pages/Products'
 import Contact from './Components/Pages/Contact'
+import ScrollUpButton from "react-scroll-up-button";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/contact' element = {<Contact/>} />
     </Routes>
     <Footer/> 
+    <ScrollUpButton AnimationDuration={500}/>
     </Router>
     </div>
   );
