@@ -56,11 +56,11 @@ const [isDesktop, setIsDesktop] = useState(false);
 
     
         <>
-         <Fade left={isDesktop} bottom={isMobile} duration={500} delay={200} distance="30px">
+         <Fade left={isDesktop} bottom={isMobile} duration={700} delay={500} distance="30px">
         <Grid container >
           {/* <Grid container style={{height:'200px'}}> */}
-            <Grid item xs={12} style={{paddingTop:'2%',paddingBottom:'2%',backgroundColor:'maroon'}} >
-            <Typography style={{fontFamily:'arial black',color:'white',border:'2px solid white' , borderRadius:'8px',display:'inline-block',padding:'4px 4px 4px 4px'
+            <Grid item xs={12} style={{paddingTop:'2%',paddingBottom:'2%',backgroundColor:'#E5E4E2'}} >
+            <Typography style={{fontFamily:'arial black',color:'black',border:'2px solid black' , borderRadius:'8px',display:'inline-block',padding:'4px 4px 4px 4px'
             // backgroundColor:'white',padding:'1% 1% 1% 1%',border:"3px solid grey",display:'inline-block'
             // textShadow:"0 0 5px black, 0 0 5px black"
 
@@ -79,7 +79,7 @@ const [isDesktop, setIsDesktop] = useState(false);
          
       
         <Grid container style={{marginTop:'0',}} >
-            <Paper style={{height:'100%',width:'100%',backgroundColor:'#FFBF00'
+            <Paper style={{height:'100%',width:'100%',backgroundColor:'#FFFF8F'
             // backgroundColor:'#CCED00'
             }}>
                 <Grid container spacing={1.4} style={{marginLeft:'2%',marginBottom:'5%', marginTop:'2%'}}>

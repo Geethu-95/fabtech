@@ -47,7 +47,7 @@ export default class SuccessStories extends Component {
     return (
       
       // <Fade right={this.isDesktop} top={this.isMobile} duration={500} delay={200} distance="30px">
-      <Fade right duration={500} delay={200} distance="30px">
+      <Fade right duration={700} delay={500} distance="30px">
       <Grid container style={{marginTop:"0px",position:"relative"}}>
          
         <Paper style={{width:'100%', backgroundColor:'#ADD8E6'}}>

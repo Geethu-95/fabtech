@@ -32,35 +32,43 @@ export default function BottomAppBar() {
       <AppBar position="relative" style={{backgroundColor:"#000080"}} sx={{ top: 'auto', bottom: 0 }}>
         <Toolbar>
             <Grid container style={{marginTop:'20px'}}>
-                <Grid item xs={12} lg={4}>
+              <Grid item xs={12} lg={4}>
+
+              <Grid item xs={12} >
                     <Typography align="left">FABRO TECHNICS</Typography><br/>
                     
                 </Grid>
 
-                <Grid item xs={12} lg = {4}>
-                  <Typography align="">PRODUCTS</Typography>
-                  
-                  
-                  
-                </Grid>
-
-                <Grid item xs={12} lg={4} align="center">
-                  <Typography>Connect with us</Typography>
-                </Grid>
-
-                <Grid item xs={12} lg={4} align="left">
+                <Grid item xs={12}  align="left">
                 <Typography >#111, Fabro Technics,</Typography>
                     <Typography>Old School Road, J.C Road,</Typography>
                     <Typography>Bangalore, KA, IN - 560067</Typography>
                 </Grid>
+              </Grid>
+              <br/>
+              <Grid item xs={12} lg={4} align="left" >
+              <Grid item xs={12} >
+                  <Typography >PRODUCTS</Typography>
+                  
+                  
+                  
+                </Grid>
 
-                <Grid item xs={12} lg={4}>
+                <Grid item xs={12} >
                 <Typography><Link> Lorem ipsum</Link></Typography>
                 <Typography> <Link>Lorem ipsum</Link></Typography>
                 <Typography> <Link>Lorem ipsum</Link></Typography>
                   {/* <Typography>Lorem ipsum</Typography> */}
                 </Grid>
-                <Grid item xs={12} lg={4} align="center">
+              </Grid>
+              <br/>
+              <Grid item xs={12} lg={4} align="left">
+                
+              <Grid item xs={12} >
+                  <Typography>Connect with us</Typography>
+                </Grid>
+
+                <Grid item xs={12} lg={4} >
                   <Typography>
                     <IconButton style={{color:"white"}}><FacebookIcon/></IconButton>
                     {/* <IconButton style={{color:"white"}}><InstagramIcon/></IconButton> */}
@@ -68,11 +76,22 @@ export default function BottomAppBar() {
                     <IconButton style={{color:'white'}}><WhatsAppIcon/></IconButton>
                   </Typography>
                 </Grid>
-                <Grid item xs={12} lg={4}>
+              </Grid>
 
-                </Grid>
+                
 
-                <Grid item xs={12} lg={4}>
+                
+
+
+                
+
+                
+                
+                {/* <Grid item xs={12} lg={4}>
+
+                </Grid> */}
+
+                <Grid item xs={12} align="center">
                     {/* Copyrights */}
             <Typography style={{color:"white",fontSize:"12px"}}>CopyRight<IconButton>
                 <CopyrightIcon style={{color:"white"}}/>
