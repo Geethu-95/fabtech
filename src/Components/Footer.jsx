@@ -15,6 +15,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { Link } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import name from '../Images/name.jpg'
 
 const StyledFab = styled(Fab)({
   position: 'absolute',
@@ -34,15 +35,15 @@ export default function BottomAppBar() {
             <Grid container style={{marginTop:'20px'}}>
               <Grid item xs={12} lg={4}>
 
-              <Grid item xs={12} >
-                    <Typography align="left">FABRO TECHNICS</Typography><br/>
-                    
+              <Grid item xs={12} align="left">
+                    {/* <Typography align="left">FABRO TECHNICS</Typography><br/> */}
+                    <img src={name} height="50px" width="300px" />
                 </Grid>
 
                 <Grid item xs={12}  align="left">
-                <Typography >#111, Fabro Technics,</Typography>
-                    <Typography>Old School Road, J.C Road,</Typography>
-                    <Typography>Bangalore, KA, IN - 560067</Typography>
+                <Typography >No. 11, St.Albans School compound, </Typography>
+                <Typography>Abbigere Ind. Road, Lakshmipura cross, </Typography>
+                <Typography>Lakshmipura, Bengaluru - 560 090.</Typography>
                 </Grid>
               </Grid>
               <br/>

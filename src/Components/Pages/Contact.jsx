@@ -20,9 +20,9 @@ export default function Contact() {
                     </Typography>
 
                     <Typography>
-                        #111, Fabro Technics, <br/>
-                        Industrial Area, Peenya, <br/>
-                        Bangalore, KA, India - 560013.
+                        No. 11, St.Albans School compound, <br/>
+                        Abbigere Ind. Road, Lakshmipura cross, <br/>
+                        Lakshmipura, Bengaluru - 560 090.
                     </Typography>
                 </Grid>
 
@@ -34,11 +34,11 @@ export default function Contact() {
                     </Typography>
 
                     <Typography>
-                        +91-99999999,
+                        +91-6300253474,
                     </Typography>
 
                     <Typography>
-                        +91-99999999
+                        +91-7337685386
                     </Typography>
                 </Grid>
 

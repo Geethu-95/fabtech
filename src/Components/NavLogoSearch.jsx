@@ -8,6 +8,9 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import logo from '../Images/logo.jpg';
+import name from '../Images/name.jpg';
+import { Grid } from '@mui/material';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -65,15 +68,23 @@ export default function SearchAppBar() {
           >
             <MenuIcon />
           </IconButton> */}
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
             FABRO TECHNICS
-          </Typography>
-          <Search>
+          </Typography> */}
+          <Grid container>
+
+            <Grid item xs={12} alignItems={'center'} justifySelf="center"
+                        >
+                <img src={name} height='80px' width='500px' />
+              </Grid>          
+              </Grid>
+          
+          {/* <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -81,7 +92,7 @@ export default function SearchAppBar() {
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
-          </Search>
+          </Search> */}
         </Toolbar>
       </AppBar>
     </Box>
