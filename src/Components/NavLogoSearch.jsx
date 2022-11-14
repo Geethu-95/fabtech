@@ -8,8 +8,11 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import logo from '../Images/logo.jpg';
+import logoedit from '../Images/logoedit.png';
 import name from '../Images/name.jpg';
+import nameftedit from '../Images/nameftedit.png';
+import PhoneIcon from '@mui/icons-material/Phone';
+
 import { Grid } from '@mui/material';
 
 const Search = styled('div')(({ theme }) => ({
@@ -57,17 +60,27 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{backgroundColor:"#000080"}}>
+      <AppBar position="static" style={{backgroundColor:"#28282B"}}>
         <Toolbar style={{ height: '100px' }}>
-          {/* <IconButton
+          <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
-          </IconButton> */}
+            <img src = {logoedit} height='70px' width='70px' />
+            <Typography
+              noWrap
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+              variant="h2"
+              style={{fontFamily:'times new roman', color:'#D22B2B'}}
+              ><b>
+                Fabro Technics
+                </b>
+              </Typography>
+          </IconButton>
           {/* <Typography
             variant="h6"
             noWrap
@@ -76,14 +89,24 @@ export default function SearchAppBar() {
           >
             FABRO TECHNICS
           </Typography> */}
-          <Grid container>
+          <Grid container justifySelf={'center'}>
 
-            <Grid item xs={12} alignItems={'center'} justifySelf="center"
-                        >
-                <img src={name} height='80px' width='500px' />
-              </Grid>          
+              {/* <Typography
+              noWrap
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+              variant="h2"
+              style={{fontFamily:'times new roman', color:'#D22B2B'}}
+              ><b>
+                Fabro Technics
+                </b>
+              </Typography> */}
               </Grid>
           
+
+          <div>
+            <IconButton style={{color:'white',width:'300px'}}><PhoneIcon/><h6>+91-6300253474</h6></IconButton>
+          </div>
           {/* <Search>
             <SearchIconWrapper>
               <SearchIcon />

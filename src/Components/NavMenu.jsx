@@ -121,7 +121,7 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" >{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -147,11 +147,13 @@ function ResponsiveAppBar() {
           </Typography> */}
           { <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button color='primary'
+              <Button
+              // 
                 key={page}
                 onClick={()=>routeChange(page)}
                 sx={{ my: 2, display: 'block' }}
-              >
+
+                style={{color:'#00A36C',fontFamily:"arial rounded mt bold",fontSize:'20px'}}>
                 {page}
               </Button>
             ))}

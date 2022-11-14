@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 
 import image5 from '../../Images/5.jpg';
+import welding from '../../Images/welding.jpg'
 
 export default function AboutUs() {
 
@@ -8,8 +9,10 @@ export default function AboutUs() {
         <>
         <Grid container>
 
-        <Grid item xs={12} align="left" style={{marginLeft:'2.5%',marginRight:'2.5%', marginTop:'1%',backgroundImage:`url(${image5})`,height:'100px',color:'#ADD8E6'}} >
-            <Typography variant="h3" style={{fontFamily:'montsserat',textShadow:"0 0 5px black, 0 0 5px black",marginTop:'1%'}}><b>ABOUT US</b></Typography>
+        <Grid item xs={12} align="left" style={{marginLeft:'2.5%',marginRight:'2.5%', marginTop:'1%',backgroundImage:`url(${welding})`,height:'100px',color:'white'}} >
+            <Typography variant="h4" style={{fontFamily:'arial black',
+            // textShadow:"0 0 5px black, 0 0 5px black",
+            marginTop:'1%'}}><b>ABOUT US</b></Typography>
            
             </Grid>
                 <br/><br/>

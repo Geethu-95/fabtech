@@ -59,13 +59,15 @@ const [isDesktop, setIsDesktop] = useState(false);
          <Fade left={isDesktop} bottom={isMobile} duration={700} delay={500} distance="30px">
         <Grid container >
           {/* <Grid container style={{height:'200px'}}> */}
-            <Grid item xs={12} style={{paddingTop:'2%',paddingBottom:'2%',backgroundColor:'#E5E4E2'}} >
-            <Typography style={{fontFamily:'arial black',color:'black',border:'2px solid black' , borderRadius:'8px',display:'inline-block',padding:'4px 4px 4px 4px'
+            <Grid item xs={12} style={{paddingTop:'2%',paddingBottom:'2%',backgroundColor:'white'}} >
+            <Typography style={{fontFamily:'arial black',color:'black',
+            // border:'2px solid black' , borderRadius:'8px',
+            display:'inline-block',padding:'4px 4px 4px 4px'
             // backgroundColor:'white',padding:'1% 1% 1% 1%',border:"3px solid grey",display:'inline-block'
             // textShadow:"0 0 5px black, 0 0 5px black"
 
             }}
-            ><h2><b>OUR PRODUCTS</b></h2></Typography>
+            ><h2><b>PRODUCTS & SERVICES</b></h2></Typography>
             </Grid>
             {/* <Grid item xs={12} style={{backgroundColor:'maroon'}}>
               <Typography variant="h8" style={{fontFamily:'arial black',color:'white',}}>

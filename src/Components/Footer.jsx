@@ -30,7 +30,7 @@ export default function BottomAppBar() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="relative" style={{backgroundColor:"#000080"}} sx={{ top: 'auto', bottom: 0 }}>
+      <AppBar position="relative" style={{backgroundColor:"#28282B"}} sx={{ top: 'auto', bottom: 0 }}>
         <Toolbar>
             <Grid container style={{marginTop:'20px'}}>
               <Grid item xs={12} lg={4}>
