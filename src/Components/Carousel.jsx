@@ -6,6 +6,7 @@ import homePicedited from '../Images/homePicedited.jpg'
 import welding from '../Images/welding.jpg'
 import welding1 from '../Images/welding1.jpg'
 import welding2 from '../Images/welding2.jpg'
+import weldingpic from '../Images/weldingpic.jpg'
 import './Jumbotron.css';
 import { motion } from "framer-motion";
 

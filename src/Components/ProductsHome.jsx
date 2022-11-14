@@ -10,6 +10,8 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import image4 from '../Images/4.jpg'
+import pwelding from '../Images/products_welding.jpg'
+import fab from '../Images/fab.jpg'
 // import { styled, createTheme, ThemeProvider } from '@mui/system';
 import { makeStyles } from '@mui/styles';
 import { useState,useEffect } from "react";
@@ -67,7 +69,7 @@ const [isDesktop, setIsDesktop] = useState(false);
             // textShadow:"0 0 5px black, 0 0 5px black"
 
             }}
-            ><h2><b>PRODUCTS & SERVICES</b></h2></Typography>
+            ><h3><b>PRODUCTS & SERVICES</b></h3></Typography>
             </Grid>
             {/* <Grid item xs={12} style={{backgroundColor:'maroon'}}>
               <Typography variant="h8" style={{fontFamily:'arial black',color:'white',}}>
@@ -93,13 +95,13 @@ const [isDesktop, setIsDesktop] = useState(false);
       <CardActionArea>
         <CardMedia
           component="img"
-          height="100"
-          image={image3}
-          alt="Spiral stair case"
+          height="150"
+          image={fab}
+          alt="Welding"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Spiral stair case
+            FABRICATION
           </Typography>
           <Typography variant="body2" color="text.secondary">
            Lorem ipsum dolor 
@@ -119,13 +121,13 @@ const [isDesktop, setIsDesktop] = useState(false);
       <CardActionArea>
         <CardMedia
           component="img"
-          height="100"
-          image={image3}
+          height="150"
+          image={pwelding}
           alt="Spiral stair case"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Spiral stair case
+            WELDING
           </Typography>
           <Typography variant="body2" color="text.secondary">
            Lorem ipsum dolor 
@@ -145,7 +147,7 @@ const [isDesktop, setIsDesktop] = useState(false);
       <CardActionArea>
         <CardMedia
           component="img"
-          height="100"
+          height="150"
           image={image3}
           alt="Spiral stair case"
         />
@@ -170,7 +172,7 @@ const [isDesktop, setIsDesktop] = useState(false);
       <CardActionArea>
         <CardMedia
           component="img"
-          height="100"
+          height="150"
           image={image3}
           alt="Spiral stair case"
         />

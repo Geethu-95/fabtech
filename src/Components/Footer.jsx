@@ -30,10 +30,10 @@ export default function BottomAppBar() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="relative" style={{backgroundColor:"#28282B"}} sx={{ top: 'auto', bottom: 0 }}>
+      <AppBar position="relative" style={{backgroundColor:"#28282B",}} sx={{ top: 'auto', bottom: 0 }}>
         <Toolbar>
             <Grid container style={{marginTop:'20px'}}>
-              <Grid item xs={12} lg={4}>
+              <Grid item xs={12} lg={3}>
 
               <Grid item xs={12} align="left">
                     {/* <Typography align="left">FABRO TECHNICS</Typography><br/> */}
@@ -47,7 +47,7 @@ export default function BottomAppBar() {
                 </Grid>
               </Grid>
               <br/>
-              <Grid item xs={12} lg={4} align="left" >
+              <Grid item xs={12} lg={3} align="left" >
               <Grid item xs={12} >
                   <Typography >PRODUCTS</Typography>
                   
@@ -62,14 +62,29 @@ export default function BottomAppBar() {
                   {/* <Typography>Lorem ipsum</Typography> */}
                 </Grid>
               </Grid>
+              <Grid item xs={12} lg={3} align="left" >
+              <Grid item xs={12} >
+                  <Typography >SERVICES</Typography>
+                  
+                  
+                  
+                </Grid>
+
+                <Grid item xs={12} >
+                <Typography><Link> Lorem ipsum</Link></Typography>
+                <Typography> <Link>Lorem ipsum</Link></Typography>
+                <Typography> <Link>Lorem ipsum</Link></Typography>
+                  {/* <Typography>Lorem ipsum</Typography> */}
+                </Grid>
+              </Grid>
               <br/>
-              <Grid item xs={12} lg={4} align="left">
+              <Grid item xs={12} lg={3} align="left">
                 
               <Grid item xs={12} >
                   <Typography>Connect with us</Typography>
                 </Grid>
 
-                <Grid item xs={12} lg={4} >
+                <Grid item xs={12} lg={3} >
                   <Typography>
                     <IconButton style={{color:"white"}}><FacebookIcon/></IconButton>
                     {/* <IconButton style={{color:"white"}}><InstagramIcon/></IconButton> */}

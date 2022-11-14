@@ -50,8 +50,8 @@ export default class SuccessStories extends Component {
       <Fade right duration={700} delay={500} distance="30px">
       <Grid container style={{marginTop:"0px",position:"relative"}}>
          
-        <Paper style={{width:'100%', backgroundColor:'#F2D2BD'}}>
-          <Typography style={{color:'orange' 
+        <Paper style={{width:'100%', backgroundColor:'orange'}}>
+          <Typography style={{color:'#F2D2BD' 
           ,marginTop:'3%', marginBottom:'3%',fontFamily:'comic sans ms',
           // border:'2px solid black' , 
           // borderRadius:'8px',

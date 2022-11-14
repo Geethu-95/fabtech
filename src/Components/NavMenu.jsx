@@ -120,7 +120,10 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} 
+                // onClick={handleCloseNavMenu}
+                onClick={()=>routeChange(page)}
+                >
                   <Typography textAlign="center" >{page}</Typography>
                 </MenuItem>
               ))}
@@ -153,7 +156,7 @@ function ResponsiveAppBar() {
                 onClick={()=>routeChange(page)}
                 sx={{ my: 2, display: 'block' }}
 
-                style={{color:'#00A36C',fontFamily:"arial rounded mt bold",fontSize:'20px'}}>
+                style={{color:'#00A36C',fontFamily:"arial",fontSize:'18px'}}>
                 {page}
               </Button>
             ))}
